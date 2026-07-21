@@ -1,25 +1,24 @@
+* {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 body {
   background-color: #242f44;
   color: white;
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
   text-align: center;
-  margin-top: 5px;
+  padding: 1px;
 }
 
 h1 {
   font-size: 36px;
-  padding: 15px;
   color: #8c6b48;
   background-color: white;
-}
-
-h2 {
-  font-size: 24px;
-  padding: 15px;
-  text-transform: uppercase;
+  text-align: center;
+  padding: 1px;
 }
 
 h3 {
@@ -36,7 +35,23 @@ h3 {
 th {
   border: 2px solid #8c6b48;
 }
-
+thead th h1 {
+  padding: 10px;
+  height: 65px auto;
+  margin: 0;
+}
+tbody td h2 {
+  padding: 10px;
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+tbody td h3 {
+  height: 65px auto;
+  margin: 0;
+  font-weight: normal;
+}
 table {
   text-align: center;
   margin: 20px auto;
@@ -45,6 +60,8 @@ table {
 td {
   border: 2px solid #8c6b48;
   width: 300px;
+  font-size: 20px;
+  height: 50px;
 }
 
 footer {
@@ -66,14 +83,16 @@ footer h3 {
   max-width: 940px;
   margin: 0 auto;
   height: 800px;
+  padding-bottom: 1000px;
 }
-
 
 .left {
-  width: 150px;
-  font-size: 20px;
-}
-.leftHead{
-  width: 150px;
+  width: 1px;
 }
 
+.leftHead {
+  width: 150px;
+}
+thead tr th {
+  height: 0.1px;
+}
