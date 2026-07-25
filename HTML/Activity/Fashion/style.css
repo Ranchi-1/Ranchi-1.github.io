@@ -3,7 +3,7 @@
   color: gray;
 }
 #NYFW {
-  font-family: Arial, sans-serif;
+  font-family: times new roman;
   font-size: 16px;
   cursor: pointer;
   transition: opacity 0.15s ease;
@@ -46,10 +46,11 @@
 
 #contact {
   margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 150px;
   text-align: center;
 }
 body {
+  font-family: Arial, sans-serif;
   margin-left: 300px;
   margin-right: 300px;
   text-align: center;
@@ -57,7 +58,6 @@ body {
 }
 p {
   text-align: justify;
-
 }
 #list{
     margin-left: 400px;
