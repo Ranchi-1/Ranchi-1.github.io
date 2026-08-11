@@ -337,10 +337,10 @@ section {
     transition: color .15s ease;
 }
 .Pantonial{
-    color:var(--accent);
+    color: red ;
     transition: color .15s ease;
 }
-}
+
 .about {
     color: #B0B0B0;
     font-style: italic;
@@ -392,57 +392,6 @@ html:has(#dark-toggle:checked) .project-card:hover {
     border-color: #39415A;
 }
 
-/* Box that holds each project's image (or the text placeholder).
-   overflow:hidden + object-fit:cover on the img is what keeps any
-   image — any aspect ratio — filling the box without stretching. */
-.project-thumb {
-    aspect-ratio: 16/9;
-    border-radius: 10px;
-    background: var(--accent-soft);
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    font-size: 13px;
-    font-weight: 600;
-    overflow: hidden;
-}
-
-.project-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.thumb-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: zoom-in;
-    position: relative;
-}
-
-.thumb-link::after {
-    content: "🔍";
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    background: rgba(0, 0, 0, 0.35);
-    opacity: 0;
-    transition: opacity .2s ease;
-}
-
-.thumb-link:hover::after,
-.thumb-link:focus-visible::after {
-    opacity: 1;
-}
-
-
 .project-card h3 {
     font-family: var(--display);
     font-size: 1.1rem;
@@ -490,7 +439,7 @@ html:has(#dark-toggle:checked) .project-card:hover {
     border-color: var(--accent);
 }
 
-/* ===== Achievements ===== */
+
 .ach-list {
     display: flex;
     flex-direction: column;
@@ -559,10 +508,7 @@ html:has(#dark-toggle:checked) .ach-item:hover {
     flex-shrink: 0;
 }
 
-/* ===== Contact =====
-   Kept as a fixed dark, high-contrast block on purpose (it's an accent
-   card, not "the page background") so it reads the same in both themes
-   instead of flattening into the page when dark mode is on. */
+
 .contact-card {
     background: #14161A;
     color: #fff;
