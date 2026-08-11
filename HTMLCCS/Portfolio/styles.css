@@ -336,6 +336,11 @@ section {
     color:transparent;
     transition: color .15s ease;
 }
+.Pantonial{
+    color:var(--accent);
+    transition: color .15s ease;
+}
+}
 .about {
     color: #B0B0B0;
     font-style: italic;
