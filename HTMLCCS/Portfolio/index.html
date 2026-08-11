@@ -3,198 +3,225 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Francis Pantonial — Design × Development</title>
+<title>Francis Pantonial — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<input type="checkbox" id="theme-toggle" class="hidden-toggle">
-<input type="checkbox" id="menu-toggle" class="hidden-toggle">
-
-<div class="corner tl"></div>
-<div class="corner br"></div>
-
-<header class="site-header">
-  <a href="#top" class="logo-mark">
-    <span class="bracket">[</span>
-    <span class="name">FRANCIS <em>PANTONIAL</em></span><span class="bracket">]</span>
-  </a>
-  <nav class="header-nav">
-    <a href="#top"> Index</a>
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#toolkit">Toolkit</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="header-actions">
-    <label for="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
-      <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
-    </label>
-    <a href="#contact" class="header-cta">Let's Talk →</a>
-    <label for="menu-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+<header>
+  <div class="nav-inner">
+    <div class="logo">
+        <span class="bracket">[</span><span class="name">FRANCIS PANTONIAL</span><span class="bracket">]</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="theme-toggle">
+        <input type="checkbox" id="dark-toggle">
+        <label for="dark-toggle" aria-label="Toggle dark mode">
+          <span class="icon">☀️</span>
+          <span class="icon">🌙</span>
+        </label>
+      </div>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
   </div>
 </header>
 
-<div class="mobile-menu">
-  <a href="#top">Index</a>
-  <a href="#about">About</a>
-  <a href="#work">Work</a>
-  <a href="#toolkit">Toolkit</a>
-  <a href="#contact">Contact</a>
-  <a href="#contact" class="header-cta">Let's Talk →</a>
-</div>
+<main class="wrap">
 
-<section class="hero" id="top">
-  <div class="blob"></div>
-  <div class="hero-inner">
-    <div class="eyebrow mono">Layer 01 — Index</div>
-    <h1 class="hero-name display">
-      <span style="animation-delay:.1s">FRANCIS</span><br>
-      <span class="stroke" style="animation-delay:.25s">PANTONIAL</span>
-    </h1>
-    <div class="hero-role">
-      <span>IT Student</span>
-      <span class="x">×</span>
-      <span class="split">Freelance Graphic Designer</span>
-    </div>
-    <div class="hero-meta">
-      <div><b>02</b>Year — BS Information Technology</div>
-      <div><b>FREELANCE</b>Open for design &amp; dev work</div>
-      <div><b>DAVAO CITY, PH</b>Based &amp; working remote</div>
-    </div>
-  </div>
-  <div class="marquee">
-    <div class="marquee-track mono">
-      <span>BRAND IDENTITY <em>◆</em> SOCIAL MEDIA DESIGN <em>◆</em> UI / UX <em>◆</em> WEB DEVELOPMENT <em>◆</em> PRINT DESIGN <em>◆</em> PYTHON <em>◆</em></span>
-      <span>BRAND IDENTITY <em>◆</em> SOCIAL MEDIA DESIGN <em>◆</em> UI / UX <em>◆</em> WEB DEVELOPMENT <em>◆</em> PRINT DESIGN <em>◆</em> PYTHON <em>◆</em></span>
-    </div>
-  </div>
-  <div class="scroll-cue mono"><span class="line"></span> SCROLL</div>
-</section>
-
-<section id="about">
-  <div class="sec-head">
-    <h2 class="display">About</h2>
-    <span class="count mono">Layer 02 — Profile</span>
-  </div>
-  <div class="about-grid">
+  <section class="hero" style="border-top:none;">
     <div>
-      <p>I sit at the overlap of two disciplines that don't usually share a desk — writing code by day as an IT student, and shaping brands and visuals by night as a freelance graphic designer.</p>
-      <p>I'm passionate about creating meaningful experiences through both design and development, and I thrive when I can bridge the gap between the two.</p>
+      <span class="eyebrow">2nd Year BSIT Student</span><br>
+      <span class="hero-sub">Web Developer | Mobile App Developer | IT Enthusiast</span>
+      <h1>
+        <span>FRANCIS</span><br>
+        <span class="accent">PANTONIAL.</span></h1>
+      <p class="hero-sub">
+        <span>IT Student</span>
+        <span class="x">×</span>
+        <span class="highlight">Freelancer</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
     </div>
-    <div class="about-side">
-      <div class="row"><span>Status</span><span>AVAILABLE</span></div>
-      <div class="row"><span>Based in</span><span>DAVAO, PH</span></div>
-      <div class="row"><span>Focus</span><span>DESIGN + DEV</span></div>
-      <div class="row"><span>Email</span><span>SOCIALRANCI</span></div>
+    <div class="hero-photo">
+      <img src="C:\Users\Ranci\Documents\Myportfolio\Ranchi-1.github.io\HTML\wVCaDymZ.jpg">
     </div>
-  </div>
-</section>
-  
-<section id="work">
-  <div class="sec-head">
-    <h2 class="display">Work</h2>
-    <span class="count mono">Layer 03 — Selected</span>
-  </div>
+  </section>
 
-  <input type="radio" name="filter" id="filter-all" class="hidden-toggle" checked>
-  <input type="radio" name="filter" id="filter-design" class="hidden-toggle">
-  <input type="radio" name="filter" id="filter-dev" class="hidden-toggle">
-  <div class="filter-tabs">
-    <label for="filter-all">All</label>
-    <label for="filter-design">Design</label>
-    <label for="filter-dev">Dev</label>
-  </div>
+  <!-- ABOUT -->
+  <section class="reveal" id="about">
+    <div class="section-head">
+      <div class="section-label">About</div>
+      <h2 class="section-title">A little about me</h2>
+    </div>
 
-  <div class="work-grid">
+    <div class="about-grid">
+      <div>
+        <p><span class="placeholder">◆</span> I am Francis Pantonial a 2nd year BSIT Student at the University of the Immaculate Conception</p>
+        <p><span class="placeholder">◆</span> I am currently interested in learning HTML and CSS though I'm still a beginner.</p>
+        <p><span class="placeholder">◆</span> </p>
+      </div>
 
-      <div class="project" data-cat="design">
-        <a class="project-link" href="https://canva.link/mqv34x0alsuth8c" target="_blank">
-        <div class="cover" style="background:linear-gradient(135deg,#FF3B6E,#7A2A6E 60%,#0B0D10);">
-          <img src="Joellyn (1080 x 1350 px) (18 x 24 in).jpg" alt="Project Cover">
-          <div class="idx mono">01</div>
+      <div>
+        <div class="skills-title">Skills &amp; Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Video Editing</span>
+          <span class="skill-tag">Modeling</span>
+          <span class="skill-tag">Perosnal Assistant</span>
+         
         </div>
-        <div class="body">
-          <h3>A COMEBACK OF AN ERA</h3>
-          <p>An inspired reimagining of a classic brand identity.</p>
-          <div class="tags"><span>Cover</span><span>Model</span><span>Magazine</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="reveal" id="projects">
+    <div class="section-head">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <a href="#">
+        <div class="project-thumb">
+          <img src="C:\Users\Ranci\Documents\Myportfolio\Ranchi-1.github.io\HTML\Joellyn (1080 x 1350 px) (18 x 24 in).jpg" alt="Project thumbnail">
         </div>
-      </a>
+        <h3>JOELLYN</h3>
+        <p>A comeback of an era, the new and renew Joellyn</p>
+        <div class="tag-line">
+          <span class="tag">Model</span>
+          <span class="tag">Photography</span>
+          <span class="tag">Magazine</span>
+        </div>
+    </a>
       </div>
 
-    <div class="project" data-cat="design">
-      <a href="https://canva.link/hoj38j895sl6veq">
-      <div class="cover" style="background:linear-gradient(135deg,#33D6C0,#1B4A66 60%,#0B0D10);">
-        <img src="BREAD'S PUBMAT(1).jpg"  alt="Project Cover">
-        <div class="idx mono">02</div>
+      <div class="project-card">
+        <a href="#">
+        <div class="project-thumb">
+            <img src="C:\Users\Ranci\Documents\Myportfolio\Ranchi-1.github.io\HTML\BREAD'S PUBMAT.jpg" alt="Project thumbnail">
+        </div>
+        <h3>Brokenshire's Promotional Tarp</h3>
+        <p>Brokenshire Promotional Tarp for the 2024 CPT</p>
+        <div class="tag-line">
+          <span class="tag">Promotional</span>
+          <span class="tag">Event</span>
+          <span class="tag">Marketing</span>
+        </div>
+    </a>
       </div>
-      <div class="body">
-        <h3>HOUSE OF THE DRAGONS</h3>
-        <p>Brokenshire's The Scroll Promotional Pubmat for the 2025 Intramurals</p>
-        <div class="tags"><span>Pubmat</span><span>Event</span></div>
+
+      <div class="project-card">
+        <a href="#">
+        <div class="project-thumb">
+            <img src="C:\Users\Ranci\Documents\Myportfolio\Ranchi-1.github.io\HTML\BREAD'S PUBMAT(1).jpg" alt="Project thumbnail">
+        </div>
+        <h3>Raise of the Dragons Intramurals Pubmat</h3>
+        <p>2025 Brokenshire Intramurals Pubmat for the Rise of the Dragons opening</p>
+        <div class="tech-line">
+          <span class="tag">Pubmat</span>
+          <span class="tag">Promotional</span>
+            <span class="tag">Event</span>
+        </div>
+        </a>
       </div>
-      </a>
+
+      <div class="project-card">
+        <div class="project-thumb">
+            <img src="C:\Users\Ranci\Documents\Myportfolio\Ranchi-1.github.io\HTML\Project Image.jpg" alt="Project thumbnail">
+        </div>
+        <h3>Project Name Placeholder</h3>
+        <p>[Placeholder] A short description of what this project does and the problem it solves.</p>
+        <div class="tech-line">
+          <span class="tech-tag">Tech</span>
+          <span class="tech-tag">Tech</span>
+        </div>
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="reveal" id="achievements">
+    <div class="section-head">
+      <div class="section-label">Achievements</div>
+      <h2 class="section-title">Milestones &amp; recognition</h2>
     </div>
 
-    <div class="project" data-cat="design">
-      <a href="https://canva.link/hoj38j895sl6veq">
-      <div class="cover" style="background:linear-gradient(135deg,#33D6C0,#1B4A66 60%,#0B0D10);">
-        <img src="BREAD'S PUBMAT.jpg"  alt="Project Cover">
-        <div class="idx mono">02</div>
+    <div class="ach-list">
+      <div class="ach-item">
+        <div class="ach-icon">★</div>
+        <div class="ach-body">
+          <h4>Student Jornalism Award</h4>
+          <p>This award was given for performance in student journalism.</p>
+        </div>
+        <span class="ach-year">2025</span>
       </div>
-      <div class="body">
-        <h3>BROKENSHIRE PROMOTIONAL TARP</h3>
-        <p>2024 Brokenshire Project as a CPT</p>
-        <div class="tags"><span>Promotional</span><span>Social</span></div>
+      <div class="ach-item">
+        <div class="ach-icon">★</div>
+        <div class="ach-body">
+          <h4>Brokenshire Student Leadership Award</h4>
+          <p>Award given by the brokenshire .</p>
+        </div>
+        <span class="ach-year">2024</span>
       </div>
-      </a>
-    </div>
-
-
-    <div class="project" data-cat="dev">
-      <div class="cover" style="background:linear-gradient(135deg,#4A5FFF,#2A2A6E 60%,#0B0D10);">
-        <div class="idx mono">03</div>
-      </div>
-      <div class="body">
-        <h3>Project Title Three</h3>
-        <p>Something something</p>
-        <div class="tags"><span>UI/UX</span><span>Figma</span></div>
-      </div>
-    </div>
-
-    <div class="project" data-cat="dev">
-      <div class="cover" style="background:linear-gradient(135deg,#FF9F3B,#7A3A2A 60%,#0B0D10);">
-        <div class="idx mono">04</div>
-      </div>
-      <div class="body">
-        <h3>Project Title Four</h3>
-        <p>Something something</p>
-        <div class="tags"><span>Code</span><span>Web</span></div>
+      <div class="ach-item">
+        <div class="ach-icon">★</div>
+        <div class="ach-body">
+          <h4>Best Pastil in the Neigborhood</h4>
+          <p>Peoples Choice Award</p>
+        </div>
+        <span class="ach-year">2024</span>
       </div>
     </div>
+  </section>
+  <section class="Acti">
+    <div class="content">
+    <ul>
+      <li><a href="#">Fashion Activity</a></li>
+      <li><a href="#">Wine Activity</a></li>
+      <li><a href="#">Burger Activity</a></li>
+    </ul>
+    </div>
+  </section>
 
-  </div>
-</section>
-<section>
-  <div class="skillSection"></div>
-</section>
+  <!-- CONTACT -->
+  <section class="reveal" id="contact">
+    <div class="contact-card">
+      <h2>Let's work <a class="toget" href="mailto:socialranci@gmail.com">together.</a></h2>
+      <p> Reach out if you'd like to collaborate or just say hello!</p>
+      <div class="contact-links">
+        <a href="mailto:francis.pantonial@placeholder.com" class="primary">Email Me</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="contact">
-  <div class="eyebrow mono">Layer 05 — Contact</div>
-  <h2 class="display">Let's build<br>something <a href="mailto:socialranci@gmail.com">together</a>.</h2>
-  <div class="contact-links">
-    <a href="mailto:socialranci@gmail.com">✉ socialranci@gmail.com</a>
-    <a href="https://www.instagram.com/pandesall.l/">↗ Instagram</a>
-    <a href="https://www.facebook.com/francispantonial1/">↗ Facebook</a>
-    <a href="https://github.com/Ranchi-1">↗ GitHub</a>
-  </div>
-</section>
+</main>
 
 <footer>
-  <span>© 2026 FRANCIS PANTONIAL</span>
+  &copy; 2026 Francis Pantonial. All rights reserved.
 </footer>
 
 </body>

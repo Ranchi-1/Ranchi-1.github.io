@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francis Pantonial — Design × Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<input type="checkbox" id="theme-toggle" class="hidden-toggle">
+<input type="checkbox" id="menu-toggle" class="hidden-toggle">
+
+<div class="corner tl"></div>
+<div class="corner br"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo-mark">
+    <span class="bracket">[</span>
+    <span class="name">FRANCIS <em>PANTONIAL</em></span><span class="bracket">]</span>
+  </a>
+  <nav class="header-nav">
+    <a href="#top"> Index</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#toolkit">Toolkit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <label for="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+      <span class="icon-sun">☀</span><span class="icon-moon">☾</span>
+    </label>
+    <a href="#contact" class="header-cta">Let's Talk →</a>
+    <label for="menu-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <a href="#top">Index</a>
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#toolkit">Toolkit</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="header-cta">Let's Talk →</a>
+</div>
+
+<section class="hero" id="top">
+  <div class="blob"></div>
+  <div class="hero-inner">
+    <div class="eyebrow mono">Layer 01 — Index</div>
+    <h1 class="hero-name display">
+      <span style="animation-delay:.1s">FRANCIS</span><br>
+      <span class="stroke" style="animation-delay:.25s">PANTONIAL</span>
+    </h1>
+    <div class="hero-role">
+      <span>IT Student</span>
+      <span class="x">×</span>
+      <span class="split">Freelance Graphic Designer</span>
+    </div>
+    <div class="hero-meta">
+      <div><b>02</b>Year — BS Information Technology</div>
+      <div><b>FREELANCE</b>Open for design &amp; dev work</div>
+      <div><b>DAVAO CITY, PH</b>Based &amp; working remote</div>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track mono">
+      <span>BRAND IDENTITY <em>◆</em> SOCIAL MEDIA DESIGN <em>◆</em> UI / UX <em>◆</em> WEB DEVELOPMENT <em>◆</em> PRINT DESIGN <em>◆</em> PYTHON <em>◆</em></span>
+      <span>BRAND IDENTITY <em>◆</em> SOCIAL MEDIA DESIGN <em>◆</em> UI / UX <em>◆</em> WEB DEVELOPMENT <em>◆</em> PRINT DESIGN <em>◆</em> PYTHON <em>◆</em></span>
+    </div>
+  </div>
+  <div class="scroll-cue mono"><span class="line"></span> SCROLL</div>
+</section>
+
+<section id="about">
+  <div class="sec-head">
+    <h2 class="display">About</h2>
+    <span class="count mono">Layer 02 — Profile</span>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>I sit at the overlap of two disciplines that don't usually share a desk — writing code by day as an IT student, and shaping brands and visuals by night as a freelance graphic designer.</p>
+      <p>I'm passionate about creating meaningful experiences through both design and development, and I thrive when I can bridge the gap between the two.</p>
+    </div>
+    <div class="about-side">
+      <div class="row"><span>Status</span><span>AVAILABLE</span></div>
+      <div class="row"><span>Based in</span><span>DAVAO, PH</span></div>
+      <div class="row"><span>Focus</span><span>DESIGN + DEV</span></div>
+      <div class="row"><span>Email</span><span>SOCIALRANCI</span></div>
+    </div>
+  </div>
+</section>
+  
+<section id="work">
+  <div class="sec-head">
+    <h2 class="display">Work</h2>
+    <span class="count mono">Layer 03 — Selected</span>
+  </div>
+
+  <input type="radio" name="filter" id="filter-all" class="hidden-toggle" checked>
+  <input type="radio" name="filter" id="filter-design" class="hidden-toggle">
+  <input type="radio" name="filter" id="filter-dev" class="hidden-toggle">
+  <div class="filter-tabs">
+    <label for="filter-all">All</label>
+    <label for="filter-design">Design</label>
+    <label for="filter-dev">Dev</label>
+  </div>
+
+  <div class="work-grid">
+
+      <div class="project" data-cat="design">
+        <a class="project-link" href="https://canva.link/mqv34x0alsuth8c" target="_blank">
+        <div class="cover" style="background:linear-gradient(135deg,#FF3B6E,#7A2A6E 60%,#0B0D10);">
+          <img src="Joellyn (1080 x 1350 px) (18 x 24 in).jpg" alt="Project Cover">
+          <div class="idx mono">01</div>
+        </div>
+        <div class="body">
+          <h3>A COMEBACK OF AN ERA</h3>
+          <p>An inspired reimagining of a classic brand identity.</p>
+          <div class="tags"><span>Cover</span><span>Model</span><span>Magazine</span></div>
+        </div>
+      </a>
+      </div>
+
+    <div class="project" data-cat="design">
+      <a href="https://canva.link/hoj38j895sl6veq">
+      <div class="cover" style="background:linear-gradient(135deg,#33D6C0,#1B4A66 60%,#0B0D10);">
+        <img src="BREAD'S PUBMAT(1).jpg"  alt="Project Cover">
+        <div class="idx mono">02</div>
+      </div>
+      <div class="body">
+        <h3>HOUSE OF THE DRAGONS</h3>
+        <p>Brokenshire's The Scroll Promotional Pubmat for the 2025 Intramurals</p>
+        <div class="tags"><span>Pubmat</span><span>Event</span></div>
+      </div>
+      </a>
+    </div>
+
+    <div class="project" data-cat="design">
+      <a href="https://canva.link/hoj38j895sl6veq">
+      <div class="cover" style="background:linear-gradient(135deg,#33D6C0,#1B4A66 60%,#0B0D10);">
+        <img src="BREAD'S PUBMAT.jpg"  alt="Project Cover">
+        <div class="idx mono">02</div>
+      </div>
+      <div class="body">
+        <h3>BROKENSHIRE PROMOTIONAL TARP</h3>
+        <p>2024 Brokenshire Project as a CPT</p>
+        <div class="tags"><span>Promotional</span><span>Social</span></div>
+      </div>
+      </a>
+    </div>
+
+
+    <div class="project" data-cat="dev">
+      <div class="cover" style="background:linear-gradient(135deg,#4A5FFF,#2A2A6E 60%,#0B0D10);">
+        <div class="idx mono">03</div>
+      </div>
+      <div class="body">
+        <h3>Project Title Three</h3>
+        <p>Something something</p>
+        <div class="tags"><span>UI/UX</span><span>Figma</span></div>
+      </div>
+    </div>
+
+    <div class="project" data-cat="dev">
+      <div class="cover" style="background:linear-gradient(135deg,#FF9F3B,#7A3A2A 60%,#0B0D10);">
+        <div class="idx mono">04</div>
+      </div>
+      <div class="body">
+        <h3>Project Title Four</h3>
+        <p>Something something</p>
+        <div class="tags"><span>Code</span><span>Web</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section>
+  <div class="skillSection"></div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="eyebrow mono">Layer 05 — Contact</div>
+  <h2 class="display">Let's build<br>something <a href="mailto:socialranci@gmail.com">together</a>.</h2>
+  <div class="contact-links">
+    <a href="mailto:socialranci@gmail.com">✉ socialranci@gmail.com</a>
+    <a href="https://www.instagram.com/pandesall.l/">↗ Instagram</a>
+    <a href="https://www.facebook.com/francispantonial1/">↗ Facebook</a>
+    <a href="https://github.com/Ranchi-1">↗ GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 FRANCIS PANTONIAL</span>
+</footer>
+
+</body>
+</html>
