@@ -333,7 +333,7 @@ section {
     margin-bottom: 0;
 }
 .head-Pantonial:hover{
-    color:#FF3B6E;
+    color:transparent;
     transition: color .15s ease;
 }
 .about {
