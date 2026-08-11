@@ -316,7 +316,6 @@ section {
     letter-spacing: -0.01em;
 }
 
-/* ===== About ===== */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
