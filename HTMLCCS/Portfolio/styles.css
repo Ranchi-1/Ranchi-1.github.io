@@ -333,8 +333,11 @@ section {
 .about-grid p:last-child {
     margin-bottom: 0;
 }
-
-.placeholder {
+.head-Pantonial:hover{
+    color:#FF3B6E;
+    transition: color .15s ease;
+}
+.about {
     color: #B0B0B0;
     font-style: italic;
 }
