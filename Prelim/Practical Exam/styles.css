@@ -38,10 +38,13 @@ nav .nav-list li{
     display: inline-block;
     text-align: left;
     list-style: none;
-
-    
+    align-items: flex-start;
+}
+ul{
+    text-align: left;
 }
 section{
+    box-sizing: border-box;
     width: 100%;
      padding: 70px 0;
     border-top: 1px solid var(--highlight);
@@ -50,12 +53,13 @@ section{
 
 /*programming section*/
 .program-card{
-    display: flex;
+    display: inline-block;
     gap: 18px;
-    align-items: flex-start;
     background: var(--mainbg);
     border: 1px solid var(--highlight);
     border-radius: 16px;
-    padding: 22px 26px;
+    width: 600px;
+    height:300px;
+    padding: 10x;
     transition: border-color .18s ease, transform .18s ease, background-color .25s ease;
 }
