@@ -616,26 +616,79 @@ footer {
         display: none;
     }
 
+    .nav-inner {
+        padding: 14px 20px;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
     .hero {
         grid-template-columns: 1fr;
-        padding-top: 90px;
+        padding: 90px 0 60px;
+        gap: 36px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.6rem, 12vw, 3.6rem);
+    }
+
+    .hero-sub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-cta {
+        justify-content: center;
     }
 
     .hero-photo {
-        max-width: 260px;
+        max-width: 220px;
+        width: 100%;
         margin: 0 auto;
         order: -1;
     }
 
     .about-grid {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
     }
 
+    .project-card {
+        padding: 20px;
+    }
+
+    .ach-item {
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
     .contact-card {
-        padding: 40px 24px;
+        padding: 40px 22px;
+        border-radius: 18px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 100%;
     }
 }

@@ -352,7 +352,7 @@
     color:var(--accent);
   }
   .project .body p{
-    color:var(--text-dim)
+    color:var(--text-dim);
     font-size:0.92rem;
     line-height:1.5;
     flex:1;
